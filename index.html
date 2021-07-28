@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Cash-Register <a class="link" href="https://github.com/anugrah3199/talk-banana"><i class="fab fa-github"></i></a></h1>
+    <div class="container-center">
+        <div class="error">
+            <p>error message</p>
+        </div>
+        <div id="bill-amount" class="input input1">
+            <label for="">enter bill amount:</label>
+            <input id="amount" type="number" min="1">
+            <button id="btn-next">Next</button>
+        </div>
+        <div id="cash" class="input input2">
+            <label for="">Cash given</label>
+            <input type="number" id="cash-given" min="1">
+            <button id="btn-cal">Calculate</button>
+            <button id="reset">reset</button>
+        </div>
+
+        <div class="result">
+        </div>
+        <div class="change"></div>
+
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/6df8c8fe62.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap');
+:root {
+    --background-green: #A7F3D0;
+    --alert-red: rgba(255, 152, 152, 0.8);
+    --primary-color: #065F46;
+    --font-green: #03291e;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Baloo Chettan 2', cursive;
+    padding: 0.5rem;
+    font-size: 2rem;
+    color: var(--font-green);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.link {
+    float: right;
+    color: black;
+}
+
+.container-center {
+    background-color: var(--background-green);
+    padding: 1rem;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+input {
+    padding: 0.5rem;
+    border: none;
+    font-size: 2rem;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    margin-top: 0.7rem;
+    width: 100%;
+}
+
+input:hover {
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;
+}
+
+button {
+    margin-top: 1rem;
+    width: 100%;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#reset {
+    background-color: white;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+}
+
+.container-center button {
+    display: block;
+}
+
+.container-center #cash {
+    display: none;
+}
+
+.error {
+    display: none;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    margin: 0.5rem 0 0.7rem;
+    background-color: var(--alert-red);
+}
+
+.result {
+    display: grid;
+    gap: 24px;
+    margin: 1rem 0;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.change {
+    width: 100%;
+    background-color: white;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    padding: 0 0.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;
+}
+
+.container span {
+    float: right;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media only screen and (min-width: 700px) {
+    .container-center {
+        max-width: 50%;
+    }
+}
