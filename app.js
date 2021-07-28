@@ -27,7 +27,7 @@ btnnext.addEventListener("click", () => {
         cashdiv.style.display = "block"
 
     } else {
-        showError("Amount must positive")
+        showError("Amount must be greater than 0")
     }
 })
 
